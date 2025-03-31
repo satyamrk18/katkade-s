@@ -80,6 +80,10 @@
         width: 100%;
         margin-top: 100px;
       }
+      .carousel-inner img { 
+        height:100vh; /* Set desired height */
+        object-fit: cover; /* Ensures images are resized without distortion */
+      }
 
       .about {
         height: 500px;
@@ -158,6 +162,7 @@
         id="carouselExampleControls"
         class="carousel slide"
         data-ride="carousel"
+        data-interval="2000"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
