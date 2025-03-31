@@ -38,6 +38,7 @@
       .header {
         width: 100%;
         height: 100vh;
+        z-index:1;
       }
       .header-1 {
         width: 100%;
@@ -97,7 +98,9 @@
       @media (min-width: 601px) and (max-width: 800px) {
         .navbar ul {
           gap: 5vw;
+          display: flex !important;
         }
+
         #hamburger-menu {
           display: none;
         }
@@ -135,18 +138,32 @@
       </div>
     </div>
     <script>
+      let hamburgerNav = document.getElementById("hamburgerNav");
+      let hamNav = document.getElementById("hamburger-menu");
       function hamMenu() {
-        let hamNav = document.getElementById("hamburger-menu");
-        let = hamburgerNav = document.getElementById("hamburgerNav");
-        if(hamburgerNav.style.display == "none")
-      {
-        hamburgerNav.style.display = "flex";
+        if (
+          hamburgerNav.style.display == "none" ||
+          hamburgerNav.style.display == ""
+        ) {
+          hamburgerNav.style.display = "flex";
+        } else {
+          hamburgerNav.style.display = "none";
+        }
       }
-      else{
-        hamburgerNav.style.display = "none";
+      // Ensure menu is always visible on larger screens
+      function checkScreenSize() {
+        if (window.innerWidth < 601) {
+          hamburgerNav.style.display = "none";
+        } else {
+          hamburgerNav.style.display = "flex";
+        }
       }
-        
-      }
+
+      // Run when browser trigger a resizing a page
+      checkScreenSize();
+
+      // Re-check when window resizes
+      window.onresize = checkScreenSize; // it is a functions call when broeser triggred as a resizing
     </script>
   </body>
 </html>
