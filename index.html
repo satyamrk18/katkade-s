@@ -31,25 +31,23 @@
         padding: 0;
         background-color: black;
       }
-      * {
-        margin: 0;
-        padding: 0;
-      }
+
       .header {
         width: 100%;
-        height: 100vh;
-        z-index:1;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
       }
       .header-1 {
         width: 100%;
-        height: 40px;
+        height: 55px;
         background-color: white;
         display: flex;
         align-items: center;
       }
       .header-2 {
         width: 100%;
-        height: 40px;
+        height: 45px;
         background-color: rgba(247, 218, 6, 0.897);
         color: white;
         display: flex;
@@ -62,7 +60,6 @@
       }
       .navbar ul {
         display: flex;
-
         gap: 10vw;
       }
       #hamburger-menu {
@@ -75,6 +72,12 @@
         font-size: 18px;
         font-weight: 600;
       }
+      .containeree {
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        margin-top: 100px;
+      }
       /*mobile*/
       @media (max-width: 600px) {
         .header-2 {
@@ -82,6 +85,7 @@
           height: 100%;
           width: 35%;
           margin-right: 0 auto;
+          z-index: 1000;
         }
         .navbar {
           display: flex;
@@ -92,6 +96,9 @@
           flex-direction: column;
           gap: 10vh;
           margin-top: 25px;
+        }
+        .containeree {
+          margin-top: 45px;
         }
       }
       /*tablet*/
@@ -113,15 +120,15 @@
     </style>
   </head>
   <body>
-    <div class="header-1">
-      <img
-        src="./images/menus.png"
-        id="hamburger-menu"
-        onclick="hamMenu()"
-        alt="manu-button"
-      />
-    </div>
     <div class="header">
+      <div class="header-1">
+        <img
+          src="./images/menus.png"
+          id="hamburger-menu"
+          onclick="hamMenu()"
+          alt="manu-button"
+        />
+      </div>
       <!--HEADRES AND LOGO    -->
       <div class="header-2" id="hamburgerNav">
         <!--Desktop Nav-->
@@ -137,15 +144,24 @@
         </nav>
       </div>
     </div>
+    <div class="containeree"></div>
     <script>
       let hamburgerNav = document.getElementById("hamburgerNav");
       let hamNav = document.getElementById("hamburger-menu");
       function hamMenu() {
+        //hamburger menu image cance to cancel image code
+        if (hamNav.src.includes("menus.png")) {
+          hamNav.src = "./images/cancel.png";
+        }
+        else{
+        hamNav.src = "./images/menus.png";
+        }
+        //hamburger menu display on small phone screen code
         if (
           hamburgerNav.style.display == "none" ||
           hamburgerNav.style.display == ""
         ) {
-          hamburgerNav.style.display = "flex";
+          hamburgerNav.style.display = "block";
         } else {
           hamburgerNav.style.display = "none";
         }
