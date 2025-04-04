@@ -29,7 +29,6 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: black;
       }
 
       .header {
@@ -75,23 +74,46 @@
         transition: all 0.3s ease;
       }
       .navbar li:hover {
-        font-weight:600;
-        color:black;
+        font-weight: 600;
+        color: black;
       }
       .containeree {
         width: 100%;
         margin-top: 100px;
       }
-      .carousel-inner img { 
-        height:100vh; /* Set desired height */
+      .carousel-inner img {
+        height: 100vh; /* Set desired height */
         object-fit: cover; /* Ensures images are resized without distortion */
       }
 
       .about {
-        height: 500px;
+        height: 85vh;
         width: 100%;
-        background-color: green;
+        background-image: url(./images/constrction-engineer-communication.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
       }
+
+      .about-poster {
+        height: 100%;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.797);
+        text-align: center;
+      }
+
+      #aboutUsHeading {
+        color: black;
+        position: relative;
+        z-index: 2;
+      }
+.about-img img
+{
+  height:250px;
+}
       /*mobile*/
       @media (max-width: 600px) {
         .header-2 {
@@ -158,7 +180,7 @@
         </nav>
       </div>
     </div>
-    <!--main video poster-->
+    <!--main photo poster-->
     <div class="containeree">
       <div
         id="carouselExampleControls"
@@ -224,7 +246,38 @@
       </div>
     </div>
     <!--about us-->
-    <div class="about"></div>
+    <div class="about">
+      <div class="about-poster">
+        <h1 id="aboutUsHeading">About Us</h1>
+        <div class="about-info-container">
+          <table>
+            <tr>
+              <td class="about-img">
+                <img src="./images/about-us-img-1.jpg" />
+              </td>
+              <td>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+                illo, blanditiis, veniam a modi debitis possimus itaque totam
+                quibusdam reprehenderit mollitia alias delectus iste. Aliquid
+                mollitia minus repellat quae facere.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+                illo, blanditiis, veniam a modi debitis possimus itaque totam
+                quibusdam reprehenderit mollitia alias delectus iste. Aliquid
+                mollitia minus repellat quae facere.
+              </td>
+              <td class="about-img">
+                <img src="./images/about-us-img-1.jpg" />
+              </td>
+             
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
     <script>
       let hamburgerNav = document.getElementById("hamburgerNav");
       let hamNav = document.getElementById("hamburger-menu");
