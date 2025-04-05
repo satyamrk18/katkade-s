@@ -47,7 +47,7 @@
       .header-2 {
         width: 100%;
         height: 45px;
-        background-color: rgba(247, 218, 6, 0.897);
+        background-color: rgb(247, 207, 6);
         color: white;
         display: flex;
         align-items: center;
@@ -87,7 +87,7 @@
       }
 
       .about {
-        height:85vh;
+        height: 85vh;
         width: 100%;
         background-image: url(./images/constrction-engineer-communication.jpg);
         background-position: center;
@@ -95,7 +95,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
       }
 
       .about-poster {
@@ -110,10 +109,19 @@
         position: relative;
         z-index: 2;
       }
-.about-img img
-{
-  height:257px;
-}
+      .about-img img {
+        height: 257px;
+      }
+      .about-poster {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      .service {
+        height: 250px;
+        width: 100%;
+        background-color: red;
+      }
       /*mobile*/
       @media (max-width: 600px) {
         .header-2 {
@@ -126,15 +134,45 @@
         .navbar {
           display: flex;
           justify-content: center;
+          height: 1024px;
         }
         .navbar ul {
           display: flex;
           flex-direction: column;
-          gap: 10vh;
+          gap:20vh;
           margin-top: 25px;
         }
         .containeree {
           margin-top: 45px;
+        }
+        .about-img img {
+          height: 150px;
+        }
+        .desktop-info-table {
+          display: none;
+        }
+        .about-poster {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width:95%;
+        }
+        .info-card {
+          height: 100%;
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .about
+        {
+          height:170vh;
+        }
+        .phn-about-img {
+          height:230px;
+          margin:25px;
+         
         }
       }
       /*tablet*/
@@ -147,10 +185,16 @@
         #hamburger-menu {
           display: none;
         }
+        .about-img img {
+          height: 150px;
+        }
       }
       @media (min-width: 801px) and (max-width: 2000px) {
         #hamburger-menu {
           display: none;
+        }
+        .about-img img {
+          height: 230px;
         }
       }
     </style>
@@ -249,8 +293,9 @@
     <div class="about">
       <div class="about-poster">
         <h1 id="aboutUsHeading">About Us</h1>
+        <!--about info for desktop-->
         <div class="about-info-container">
-          <table>
+          <table class="desktop-info-table">
             <tr>
               <td class="about-img">
                 <img src="./images/about-us-img-1.jpg" />
@@ -272,12 +317,52 @@
               <td class="about-img">
                 <img src="./images/about-us-img-1.jpg" />
               </td>
-             
+            </tr>
+          </table>
+          <!--ABOUT INFO for mobile-->
+        </div>
+        <div class="info-card">
+          <table>
+            <tr>
+              <td>
+                <img src="images/about-us-img-1.jpg" class="phn-about-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                incidunt aperiam placeat earum veritatis nihil adipisci porro
+                quia laboriosam, eos eaque aliquam, ex error unde. Quam
+                perspiciatis quidem doloribus nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                incidunt aperiam placeat earum veritatis nihil adipisci porro
+                quia laboriosam, eos eaque aliquam, ex error unde. Quam
+                perspiciatis quidem doloribus nesciunt.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/about-us-img-1.jpg" class="phn-about-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                incidunt aperiam placeat earum veritatis nihil adipisci porro
+                quia laboriosam, eos eaque aliquam, ex error unde. Quam
+                perspiciatis quidem doloribus nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                incidunt aperiam placeat earum veritatis nihil adipisci porro
+                quia laboriosam, eos eaque aliquam, ex error unde. Quam
+                perspiciatis quidem doloribus nesciunt.
+              </td>
             </tr>
           </table>
         </div>
       </div>
     </div>
+    <!--service-->
+    <div class="service"></div>
     <script>
       let hamburgerNav = document.getElementById("hamburgerNav");
       let hamNav = document.getElementById("hamburger-menu");
