@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide In Animation</title>
+    <style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.animated-box {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="animated-box">
+      <img src="images/constrction-2.jpg" alt="Your Image" />
+      <!-- or -->
+      <!-- <h1>Welcome to My Website!</h1> -->
+    </div>
+  </body>
+</html>

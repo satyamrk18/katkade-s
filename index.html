@@ -87,7 +87,7 @@
       }
 
       .about {
-        height:auto;
+        height: auto;
         width: 100%;
         background-image: url(./images/constrction-engineer-communication.jpg);
         background-position: center;
@@ -109,8 +109,30 @@
         position: relative;
         z-index: 2;
       }
+      .about-img {
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slideIn 1s ease-out forwards;
+      }
+      @keyframes slideIn {
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      #about-img-2 {
+        opacity: 0;
+        transform: translateX(100%);
+        animation: slideIn-2 1s ease-out forwards;
+      }
+      @keyframes slideIn-2 {
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
       .about-img img {
-        height:275px;
+        height: 275px;
       }
       .about-poster {
         display: flex;
@@ -166,7 +188,7 @@
           flex-direction: column;
         }
         .about {
-          height:auto;
+          height: auto;
         }
         .phn-about-img {
           height: 230px;
@@ -179,35 +201,31 @@
           gap: 5vw;
           display: flex !important;
         }
-        .about
-        {
-          height:auto;
+        .about {
+          height: auto;
         }
         #hamburger-menu {
           display: none;
         }
         .about-img img {
-          height:200px;
+          height: 200px;
         }
         .info-card {
           display: none;
         }
-        .about-poster
-        {
-          width:100%;
+        .about-poster {
+          width: 100%;
         }
-
       }
       @media (min-width: 801px) and (max-width: 2000px) {
         #hamburger-menu {
           display: none;
         }
-        .about-poster
-        {
-          width:95%;
+        .about-poster {
+          width: 95%;
         }
         .about-img img {
-          height:257px;
+          height: 257px;
         }
         .info-card {
           display: none;
@@ -324,10 +342,10 @@
                 consectetur adipisicing elit. Error illo, blanditiis, veniam a
                 modi debitis possimus itaque totam quibusdam reprehenderit
                 mollitia alias delectus iste. Aliquid mollitia minus repellat
-                quae facere.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-                illo, blanditiis, veniam a modi debitis possimus itaque totam
-                quibusdam reprehenderit mollitia alias delectus iste. Aliquid
-                mollitia minus repellat quae facere.
+                quae facere.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Error illo, blanditiis, veniam a modi debitis possimus
+                itaque totam quibusdam reprehenderit mollitia alias delectus
+                iste. Aliquid mollitia minus repellat quae facere.
               </td>
             </tr>
             <tr>
@@ -339,12 +357,12 @@
                 consectetur adipisicing elit. Error illo, blanditiis, veniam a
                 modi debitis possimus itaque totam quibusdam reprehenderit
                 mollitia alias delectus iste. Aliquid mollitia minus repellat
-                quae facere.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-                illo, blanditiis, veniam a modi debitis possimus itaque totam
-                quibusdam reprehenderit mollitia alias delectus iste. Aliquid
-                mollitia minus repellat quae facere
+                quae facere.Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Error illo, blanditiis, veniam a modi debitis possimus
+                itaque totam quibusdam reprehenderit mollitia alias delectus
+                iste. Aliquid mollitia minus repellat quae facere
               </td>
-              <td class="about-img">
+              <td class="about-img" id="about-img-2">
                 <img src="./images/about-us-img-1.jpg" />
               </td>
             </tr>
