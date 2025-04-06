@@ -15,6 +15,7 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content:end;
   }
   .header-2 {
     width: 100%;
@@ -59,6 +60,21 @@ body {
   }
    /*mobile*/
    @media (max-width: 600px) {
+    #hamburger-menu
+    {
+        position:fixed;
+        left:0px;
+    }
+    .header-1
+    {
+
+    }
+    .header-1-info
+    {
+        flex-direction:column;
+        gap:0px;
+        font-size:10px;
+    }
     .header-2 {
       display: none;
       height: 100%;
