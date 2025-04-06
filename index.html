@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -26,66 +28,6 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      .header {
-        width: 100%;
-        position: fixed;
-        top: 0px;
-        z-index: 100;
-      }
-      .header-1 {
-        width: 100%;
-        height: 55px;
-        background-color: white;
-        display: flex;
-        align-items: center;
-      }
-      .header-2 {
-        width: 100%;
-        height: 45px;
-        background-color: rgb(247, 207, 6);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .navbar {
-        display: flex;
-        align-items: center;
-      }
-      .navbar ul {
-        display: flex;
-        gap: 10vw;
-      }
-      #hamburger-menu {
-        height: 35px;
-        margin-left: 25px;
-      }
-      .navbar li {
-        display: flex;
-        padding-top: 10px;
-        font-size: 20px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-      .navbar li:hover {
-        font-weight: 600;
-        color: black;
-      }
-      .containeree {
-        width: 100%;
-        margin-top: 100px;
-      }
-      .carousel-inner img {
-        height: 100vh; /* Set desired height */
-        object-fit: cover; /* Ensures images are resized without distortion */
-      }
-
       .about {
         height: auto;
         width: 100%;
@@ -146,24 +88,6 @@
       }
       /*mobile*/
       @media (max-width: 600px) {
-        .header-2 {
-          display: none;
-          height: 100%;
-          width: 35%;
-          margin-right: 0 auto;
-          z-index: 1000;
-        }
-        .navbar {
-          display: flex;
-          justify-content: center;
-          height: 1024px;
-        }
-        .navbar ul {
-          display: flex;
-          flex-direction: column;
-          gap: 20vh;
-          margin-top: 25px;
-        }
         .containeree {
           margin-top: 45px;
         }
@@ -197,15 +121,8 @@
       }
       /*tablet*/
       @media (min-width: 601px) and (max-width: 800px) {
-        .navbar ul {
-          gap: 5vw;
-          display: flex !important;
-        }
         .about {
           height: auto;
-        }
-        #hamburger-menu {
-          display: none;
         }
         .about-img img {
           height: 200px;
@@ -218,9 +135,6 @@
         }
       }
       @media (min-width: 801px) and (max-width: 2000px) {
-        #hamburger-menu {
-          display: none;
-        }
         .about-poster {
           width: 95%;
         }
@@ -411,40 +325,6 @@
     </div>
     <!--service-->
     <div class="service"></div>
-    <script>
-      let hamburgerNav = document.getElementById("hamburgerNav");
-      let hamNav = document.getElementById("hamburger-menu");
-      function hamMenu() {
-        //hamburger menu image cance to cancel image code
-        if (hamNav.src.includes("menus.png")) {
-          hamNav.src = "./images/cancel.png";
-        } else {
-          hamNav.src = "./images/menus.png";
-        }
-        //hamburger menu display on small phone screen code
-        if (
-          hamburgerNav.style.display == "none" ||
-          hamburgerNav.style.display == ""
-        ) {
-          hamburgerNav.style.display = "block";
-        } else {
-          hamburgerNav.style.display = "none";
-        }
-      }
-      // Ensure menu is always visible on larger screens
-      function checkScreenSize() {
-        if (window.innerWidth < 601) {
-          hamburgerNav.style.display = "none";
-        } else {
-          hamburgerNav.style.display = "flex";
-        }
-      }
-
-      // Run when browser trigger a resizing a page
-      checkScreenSize();
-
-      // Re-check when window resizes
-      window.onresize = checkScreenSize; // it is a functions call when broeser triggred as a resizing
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
