@@ -39,7 +39,7 @@ const IncrementNumexperience = document.getElementById(
 );
 let i = 1;
 const NumberIncrementexperience = setInterval(() => {
-  IncrementNumexperience.innerText = `${i}+ Year's`;
+  IncrementNumexperience.innerText = `${i}+ Year's Experience`;
   if (i === 10) {
     clearInterval(NumberIncrementexperience);
   }
