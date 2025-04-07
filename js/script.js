@@ -34,7 +34,9 @@ window.onresize = checkScreenSize; // it is a functions call when broeser triggr
 
 //incremetal card
 //for Experience
-const IncrementNumexperience = document.getElementById("incremetnal-info-experience");
+const IncrementNumexperience = document.getElementById(
+  "incremetnal-info-experience"
+);
 let i = 1;
 const NumberIncrementexperience = setInterval(() => {
   IncrementNumexperience.innerText = `${i}+ Year's`;
@@ -44,7 +46,9 @@ const NumberIncrementexperience = setInterval(() => {
   i++;
 }, 200);
 //for Projects
-const IncrementNumprojects = document.getElementById("incremetnal-info-projects");
+const IncrementNumprojects = document.getElementById(
+  "incremetnal-info-projects"
+);
 let j = 1;
 const NumberIncrementprojects = setInterval(() => {
   IncrementNumprojects.innerText = `${j}+ Project's Complete`;
@@ -52,15 +56,16 @@ const NumberIncrementprojects = setInterval(() => {
     clearInterval(NumberIncrementprojects);
   }
   j++;
-}, 200);
+}, 20);
 //for services
-const IncrementNumServices=document.getElementById("incremetnal-info-services");
+const IncrementNumServices = document.getElementById(
+  "incremetnal-info-services"
+);
 let k = 1;
 const NumberIncrementServices = setInterval(() => {
-  IncrementNumServices.innerText=`${k}+ Services`;
-  if(k ===20)
-  {
+  IncrementNumServices.innerText = `${k}+ Services`;
+  if (k === 20) {
     clearInterval(NumberIncrementServices);
   }
-  k++
-},200);
+  k++;
+}, 100);
