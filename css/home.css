@@ -1,7 +1,7 @@
 .about {
     height: auto;
     width: 100%;
-    background-image: url(./images/constrction-engineer-communication.jpg);
+    background-image: url("./../images/constrction-engineer-communication.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -12,7 +12,7 @@
   .about-poster {
     height: 100%;
     width: 80%;
-    background-color: rgba(255, 255, 255, 0.797);
+    background-color: rgba(255, 255, 255, 0.833);
     text-align: center;
   }
 
