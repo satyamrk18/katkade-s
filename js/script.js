@@ -34,27 +34,33 @@ window.onresize = checkScreenSize; // it is a functions call when broeser triggr
 
 //incremetal card
 //for Experience
-const IncrementNumexperience = document.getElementById(
-  "incremetnal-info-experience"
-);
+const IncrementNumexperience = document.getElementById("incremetnal-info-experience");
 let i = 1;
 const NumberIncrementexperience = setInterval(() => {
-  IncrementNumexperience.innerText = `${i}+`;
+  IncrementNumexperience.innerText = `${i}+ Year's`;
   if (i === 10) {
     clearInterval(NumberIncrementexperience);
   }
   i++;
 }, 200);
 //for Projects
-const IncrementNumprojects = document.getElementById(
-  "incremetnal-info-projects"
-);
+const IncrementNumprojects = document.getElementById("incremetnal-info-projects");
 let j = 1;
 const NumberIncrementprojects = setInterval(() => {
-  IncrementNumprojects.innerText = `${j}+`;
-  if (j === 10) {
+  IncrementNumprojects.innerText = `${j}+ Project's Complete`;
+  if (j === 100) {
     clearInterval(NumberIncrementprojects);
   }
   j++;
 }, 200);
-//
+//for services
+const IncrementNumServices=document.getElementById("incremetnal-info-services");
+let k = 1;
+const NumberIncrementServices = setInterval(() => {
+  IncrementNumServices.innerText=`${k}+ Services`;
+  if(k ===20)
+  {
+    clearInterval(NumberIncrementServices);
+  }
+  k++
+},200);
