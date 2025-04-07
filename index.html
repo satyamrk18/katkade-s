@@ -224,9 +224,18 @@
         </div>
       </div>
     </div>
-    <div class="incremetnal-info"></div>
+    <div class="incremetnal-info"><h1 id="incremetnal-info-num"></h1></div>
     <!--service-->
     <div class="service"></div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js">
+      let i = 1;
+const intervalId = setInterval(() => {
+  console.log(i);
+  if (i === 10) {
+    clearInterval(intervalId);
+  }
+  i++;
+}, 100);
+    </script>
   </body>
 </html>
