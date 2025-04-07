@@ -33,12 +33,28 @@ checkScreenSize();
 window.onresize = checkScreenSize; // it is a functions call when broeser triggred as a resizing
 
 //incremetal card
-const IncrementNum = document.getElementById("incremetnal-info-num");
+//for Experience
+const IncrementNumexperience = document.getElementById(
+  "incremetnal-info-experience"
+);
 let i = 1;
-const NumberIncrement = setInterval(() => {
-  IncrementNum.innerText = `${i}+`;
+const NumberIncrementexperience = setInterval(() => {
+  IncrementNumexperience.innerText = `${i}+`;
   if (i === 10) {
-    clearInterval(NumberIncrement);
+    clearInterval(NumberIncrementexperience);
   }
   i++;
 }, 200);
+//for Projects
+const IncrementNumprojects = document.getElementById(
+  "incremetnal-info-projects"
+);
+let j = 1;
+const NumberIncrementprojects = setInterval(() => {
+  IncrementNumprojects.innerText = `${j}+`;
+  if (j === 10) {
+    clearInterval(NumberIncrementprojects);
+  }
+  j++;
+}, 200);
+//
