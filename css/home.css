@@ -60,16 +60,22 @@
   {
     z-index:1000;
   }
+  
   .incremetnal-info {
     width: 100%;
-    height: 100px;
-    background-color: green;
+    height:150px;
+   background-image:url("./../images/project-discussion.jpg"); 
+   background-position:center;
+   background-size:cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
+    color: #F7CF06;
     flex-direction:row;
     font-size:15px;
+   
   }
+
   /*mobile*/
   @media (max-width: 600px) {
     .containeree {
