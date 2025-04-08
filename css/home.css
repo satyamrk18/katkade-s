@@ -51,11 +51,6 @@
     flex-wrap: nowrap;
     flex-direction: column;
   }
-  .service {
-    height: 250px;
-    width: 100%;
-    background-color: red;
-  }
   #logo
   {
     z-index:1000;
@@ -78,6 +73,22 @@
     font-size:35px;
     font-weight:600;
   }
+  /* services */
+  .service {
+    height: 250px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+  }
+  .main-service-card
+  {
+      height:100%;
+      width:20%;
+background-color:green;
+  }
+
   /*mobile*/
   @media (max-width: 600px) {
     .containeree {
