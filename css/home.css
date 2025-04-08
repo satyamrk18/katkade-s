@@ -1,158 +1,168 @@
 .about {
-    height: auto;
-    width: 100%;
-    background-image: url("./../images/constrction-engineer-communication.jpg");
-    background-position: center;
-    background-size: cover;
+  height: auto;
+  width: 100%;
+  background-image: url("./../images/constrction-engineer-communication.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-poster {
+  height: 100%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.833);
+  text-align: center;
+}
+
+#aboutUsHeading {
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+.about-img {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s ease-out forwards;
+}
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#about-img-2 {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn-2 1s ease-out forwards;
+}
+@keyframes slideIn-2 {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.about-img img {
+  height: 275px;
+}
+.about-poster {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+#logo {
+  z-index: 1000;
+}
+
+.incremetnal-info {
+  width: 100%;
+  height: 150px;
+  background-image: url("./../images/project-discussion.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #f7cf06;
+  flex-direction: row;
+}
+.incremetnal-info p {
+  font-size: 35px;
+  font-weight: 600;
+}
+/* services */
+.service {
+  height:auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top:25px;
+}
+.main-service-card {
+  height:60vh;
+  width: 20%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.service-line
+{
+  height:10px;
+  width:100%;
+  background-color:pink;
+  
+}
+.service-card
+{
+  width:100%;
+  height:90%;
+  background-color:blue;
+}
+/*mobile*/
+@media (max-width: 600px) {
+  .containeree {
+    margin-top: 45px;
+  }
+  .about-img img {
+    height: 150px;
+  }
+  .desktop-info-table {
+    display: none;
+  }
+  .about-poster {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 95%;
   }
-
-  .about-poster {
+  .info-card {
     height: 100%;
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.833);
-    text-align: center;
-  }
-
-  #aboutUsHeading {
-    color: black;
-    position: relative;
-    z-index: 2;
-  }
-  .about-img {
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideIn 1s ease-out forwards;
-  }
-  @keyframes slideIn {
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  #about-img-2 {
-    opacity: 0;
-    transform: translateX(100%);
-    animation: slideIn-2 1s ease-out forwards;
-  }
-  @keyframes slideIn-2 {
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  .about-img img {
-    height: 275px;
-  }
-  .about-poster {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-  #logo
-  {
-    z-index:1000;
-  }
-  
-  .incremetnal-info {
-    width: 100%;
-    height:150px;
-   background-image:url("./../images/project-discussion.jpg"); 
-   background-position:center;
-   background-size:cover;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    color: #F7CF06;
-    flex-direction:row;
-    
+    justify-content: center;
+    flex-direction: column;
   }
-  .incremetnal-info p{
-    font-size:35px;
-    font-weight:600;
+  .about {
+    height: auto;
   }
-  /* services */
-  .service {
-    height: 250px;
+  .phn-about-img {
+    height: 230px;
+    margin: 25px;
+  }
+  .incremetnal-info p {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+/*tablet*/
+@media (min-width: 601px) and (max-width: 800px) {
+  .about {
+    height: auto;
+  }
+  .about-img img {
+    height: 200px;
+  }
+  .info-card {
+    display: none;
+  }
+  .about-poster {
     width: 100%;
-    background-color: red;
-    display: flex;
-    align-items:center;
-    justify-content:space-evenly;
   }
-  .main-service-card
-  {
-      height:100%;
-      width:20%;
-background-color:green;
+}
+@media (min-width: 801px) and (max-width: 2000px) {
+  .about-poster {
+    width: 95%;
   }
-
-  /*mobile*/
-  @media (max-width: 600px) {
-    .containeree {
-      margin-top: 45px;
-    }
-    .about-img img {
-      height: 150px;
-    }
-    .desktop-info-table {
-      display: none;
-    }
-    .about-poster {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 95%;
-    }
-    .info-card {
-      height: 100%;
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .about {
-      height: auto;
-    }
-    .phn-about-img {
-      height: 230px;
-      margin: 25px;
-    }
-    .incremetnal-info p{
-      font-size:25px;
-      font-weight:400;
-    }
+  .about-img img {
+    height: 257px;
   }
-  /*tablet*/
-  @media (min-width: 601px) and (max-width: 800px) {
-    .about {
-      height: auto;
-    }
-    .about-img img {
-      height: 200px;
-    }
-    .info-card {
-      display: none;
-    }
-    .about-poster {
-      width: 100%;
-    }
+  .info-card {
+    display: none;
   }
-  @media (min-width: 801px) and (max-width: 2000px) {
-    .about-poster {
-      width: 95%;
-    }
-    .about-img img {
-      height: 257px;
-    }
-    .info-card {
-      display: none;
-    }
-    .incremetnal-info
-    {
-      font-size:10px;
-    }
+  .incremetnal-info {
+    font-size: 10px;
   }
+}
