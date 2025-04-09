@@ -72,6 +72,11 @@
   font-weight: 600;
 }
 /* services */
+.service-heading
+{
+  margin-top:25px;
+  text-align:center;
+}
 .service {
   height: auto;
   width: 100%;
