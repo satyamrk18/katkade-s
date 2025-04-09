@@ -93,12 +93,12 @@
 .service-line {
   height: 10px;
   width: 100%;
-  background-color: pink;
+  background-color:rgba(0, 0, 0, 0.817);
 }
 .service-card {
   width: 100%;
   height: 90%;
-  background-color: blue;
+  background-color:#f7ab06e5;
 }
 .projects {
   width: 100%;
