@@ -203,6 +203,10 @@ span {
     margin: 20px 0px;
     min-width: 350px;
   }
+  .service-info {
+    text-align: center;
+    margin: 0px 50px;
+  }
 }
 /*tablet*/
 @media (min-width: 601px) and (max-width: 800px) {
@@ -227,6 +231,10 @@ span {
   }
   .main-service-card {
     min-width: 300px;
+  }
+  .service-info {
+    text-align: center;
+    margin: 0px 90px;
   }
 }
 @media (min-width: 801px) and (max-width: 2000px) {
@@ -254,5 +262,9 @@ span {
     font-size: 18px;
     font-weight: 400;
     color: #db9703;
+  }
+  .service-info {
+    text-align: center;
+    margin: 0px 200px;
   }
 }
