@@ -72,29 +72,27 @@
   font-weight: 600;
 }
 /* services */
-.service-heading
-{
-  margin-top:25px;
-  text-align:center;
+.service-heading {
+  margin-top: 25px;
+  text-align: center;
 }
 .service {
   height: auto;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; 
-   margin: 25px 0px;
-   flex-wrap:wrap;
+  justify-content: space-evenly;
+  margin: 25px 0px;
+  flex-wrap: wrap;
 }
-.service-info
-{
-  text-align:center;
-  margin:0px 200px;
+.service-info {
+  text-align: center;
+  margin: 0px 200px;
 }
 .main-service-card {
   height: 62vh;
   width: 20%;
-  min-width:250px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,53 +101,55 @@
 .service-line {
   height: 10px;
   width: 100%;
-  background-color:rgba(0, 0, 0, 0.817);
+  background-color: rgba(0, 0, 0, 0.817);
 }
 .service-card {
   width: 100%;
   height: 90%;
-  background-color:#f7ab06e5;
-  display:flex;
-  justify-content:center;
-  text-align:center;
+  background-color: #f7ab06e5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-.service-card img 
-{
-  margin-top:10px;
-  height:100px;
+.service-card img {
+  margin-top: 10px;
+  height: 100px;
 }
-.service-button
-{
-margin-bottom:10px;
-border:none;
-width:150px;
-height:35px;
-font-size:18px;
-font-weight:400;
-color:#db9703;
-cursor:pointer;
-transition:all 0.3s;
+.service-button {
+  margin-bottom: 10px;
+  border: none;
+  width: 150px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #db9703;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.service-button:hover{
-  color:black;
-  box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.269);
+.service-button:hover {
+  color: black;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.269);
 }
-.more-service-btn
-{
-  text-align:center;
+.more-service-btn {
+  text-align: center;
 }
-.more-service-btn button
-{
-  text-align:center;
-  margin-bottom:25px;
-  border:none;
-  border-radius:5px;
-  height:40px;
-  width:200px;
-  font-weight:600;
-  color:white;
-  font-size:22px;
-  background-color:#f7ab06e5;
+.more-service-btn button {
+  text-align: center;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  font-weight: 600;
+  color: white;
+  font-size: 22px;
+  background-color: #f7ab06e5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.more-service-btn button:hover {
+  background-color:rgba(0, 0, 0, 0.516);
+  color: #f7ab06e5;
 }
 .projects {
   width: 100%;
@@ -192,10 +192,9 @@ transition:all 0.3s;
     font-size: 25px;
     font-weight: 400;
   }
-  .main-service-card
-  {
-    margin:20px 0px;
-    min-width:350px;
+  .main-service-card {
+    margin: 20px 0px;
+    min-width: 350px;
   }
 }
 /*tablet*/
@@ -212,13 +211,11 @@ transition:all 0.3s;
   .about-poster {
     width: 100%;
   }
-  .main-service-card
-  {
-    margin:20px 0px;
+  .main-service-card {
+    margin: 20px 0px;
   }
-  .main-service-card
-  {
-    min-width:300px;
+  .main-service-card {
+    min-width: 300px;
   }
 }
 @media (min-width: 801px) and (max-width: 2000px) {
@@ -234,19 +231,17 @@ transition:all 0.3s;
   .incremetnal-info {
     font-size: 10px;
   }
-  .main-service-card
-  {
-    margin:20px 0px;
-    height:68vh;
+  .main-service-card {
+    margin: 20px 0px;
+    height: 68vh;
   }
-  .service-button
-{
-margin-bottom:10px;
-border:none;
-width:150px;
-height:35px;
-font-size:18px;
-font-weight:400;
-color:#db9703;
-}
+  .service-button {
+    margin-bottom: 10px;
+    border: none;
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #db9703;
+  }
 }
