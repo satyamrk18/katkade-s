@@ -39,7 +39,7 @@ const IncrementNumexperience = document.getElementById(
 );
 let i = 1;
 const NumberIncrementexperience = setInterval(() => {
-  IncrementNumexperience.innerText = `${i}+ Year's Experience`;
+  IncrementNumexperience.innerHTML = `${i}+ <span>Year's Experience</span>`;
   if (i === 10) {
     clearInterval(NumberIncrementexperience);
   }
@@ -51,7 +51,7 @@ const IncrementNumprojects = document.getElementById(
 );
 let j = 1;
 const NumberIncrementprojects = setInterval(() => {
-  IncrementNumprojects.innerText = `${j}+ Project's Complete`;
+  IncrementNumprojects.innerHTML = `${j}+ <span>Project's Complete</span>`;
   if (j === 100) {
     clearInterval(NumberIncrementprojects);
   }
@@ -63,7 +63,7 @@ const IncrementNumServices = document.getElementById(
 );
 let k = 1;
 const NumberIncrementServices = setInterval(() => {
-  IncrementNumServices.innerText = `${k}+ Services`;
+  IncrementNumServices.innerHTML = `${k}+ <span>Services</span>`;
   if (k === 20) {
     clearInterval(NumberIncrementServices);
   }

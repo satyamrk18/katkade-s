@@ -71,6 +71,9 @@
   font-size: 35px;
   font-weight: 600;
 }
+span{
+  color:white;
+}
 /* services */
 .service-heading {
   margin-top: 25px;
