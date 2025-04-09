@@ -33,39 +33,55 @@ checkScreenSize();
 window.onresize = checkScreenSize; // it is a functions call when broeser triggred as a resizing
 
 //incremetal card
-//for Experience
-const IncrementNumexperience = document.getElementById(
-  "incremetnal-info-experience"
-);
-let i = 1;
-const NumberIncrementexperience = setInterval(() => {
-  IncrementNumexperience.innerHTML = `${i}+ <span>Year's Experience</span>`;
-  if (i === 10) {
-    clearInterval(NumberIncrementexperience);
+let started = false;
+
+function startExperienceCounter() {
+  const el = document.getElementById("incremetnal-info-experience");
+  let i = 1;
+  const interval = setInterval(() => {
+    el.innerHTML = `${i}+ <span>Year's Experience</span>`;
+    if (i === 10) clearInterval(interval);
+    i++;
+  }, 200);
+}
+
+function startProjectCounter() {
+  const el = document.getElementById("incremetnal-info-projects");
+  let i = 1;
+  const interval = setInterval(() => {
+    el.innerHTML = `${i}+ <span>Project's Complete</span>`;
+    if (i === 100) clearInterval(interval);
+    i++;
+  }, 20);
+}
+
+function startServiceCounter() {
+  const el = document.getElementById("incremetnal-info-services");
+  let i = 1;
+  const interval = setInterval(() => {
+    el.innerHTML = `${i}+ <span>Services</span>`;
+    if (i === 20) clearInterval(interval);
+    i++;
+  }, 100);
+}
+
+// ✅ Intersection Observer to detect when section is visible
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !started) {
+        startExperienceCounter();
+        startProjectCounter();
+        startServiceCounter();
+        started = true; // only run once
+      }
+    });
+  },
+  {
+    threshold:0.7, // 50% of element should be visible
   }
-  i++;
-}, 200);
-//for Projects
-const IncrementNumprojects = document.getElementById(
-  "incremetnal-info-projects"
 );
-let j = 1;
-const NumberIncrementprojects = setInterval(() => {
-  IncrementNumprojects.innerHTML = `${j}+ <span>Project's Complete</span>`;
-  if (j === 100) {
-    clearInterval(NumberIncrementprojects);
-  }
-  j++;
-}, 20);
-//for services
-const IncrementNumServices = document.getElementById(
-  "incremetnal-info-services"
-);
-let k = 1;
-const NumberIncrementServices = setInterval(() => {
-  IncrementNumServices.innerHTML = `${k}+ <span>Services</span>`;
-  if (k === 20) {
-    clearInterval(NumberIncrementServices);
-  }
-  k++;
-}, 100);
+
+// 👇 Observe the counter section
+observer.observe(document.getElementById("counter-section"));
+//to initialize the the animation 
+AOS.init();

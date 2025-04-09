@@ -6,6 +6,12 @@
     <title>Home page</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/home.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -139,7 +145,7 @@
         <div class="about-info-container">
           <table class="desktop-info-table">
             <tr>
-              <td class="about-img">
+              <td data-aos="fade-right" class="about-img">
                 <img src="./images/about-us-img-1.jpg" />
               </td>
               <td>
@@ -170,7 +176,7 @@
                 itaque totam quibusdam reprehenderit mollitia alias delectus
                 iste. Aliquid mollitia minus repellat quae facere
               </td>
-              <td class="about-img" id="about-img-2">
+              <td class="about-img" data-aos="fade-left" id="about-img-2">
                 <img src="./images/about-us-img-1.jpg" />
               </td>
             </tr>
@@ -217,12 +223,12 @@
         </div>
       </div>
     </div>
-    <div class="incremetnal-info">
-   
+    <div class="incremetnal-info" id="counter-section">
       <p id="incremetnal-info-experience"></p>
       <p id="incremetnal-info-projects"></p>
       <p id="incremetnal-info-services"></p>
     </div>
+
     <!--service-->
     <h1 class="service-heading">Services</h1>
     <div class="service">
@@ -352,5 +358,6 @@
     <!--Projects-->
     <div class="projects"></div>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
