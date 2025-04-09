@@ -70,9 +70,12 @@
 .incremetnal-info p {
   font-size: 35px;
   font-weight: 600;
+  text-decoration:underline;
+  text-decoration-thickness:3px;
+  text-underline-offset:20px;
 }
-span{
-  color:white;
+span {
+  color: white;
 }
 /* services */
 .service-heading {
@@ -151,7 +154,7 @@ span{
   transition: all 0.3s;
 }
 .more-service-btn button:hover {
-  background-color:rgba(0, 0, 0, 0.516);
+  background-color: rgba(0, 0, 0, 0.479);
   color: #f7ab06e5;
 }
 .projects {
@@ -194,6 +197,7 @@ span{
   .incremetnal-info p {
     font-size: 25px;
     font-weight: 400;
+    text-decoration:none;
   }
   .main-service-card {
     margin: 20px 0px;
@@ -213,6 +217,10 @@ span{
   }
   .about-poster {
     width: 100%;
+  }
+  .incremetnal-info p
+  {
+    text-decoration:none;
   }
   .main-service-card {
     margin: 20px 0px;
