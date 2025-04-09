@@ -87,7 +87,7 @@
    flex-wrap:wrap;
 }
 .main-service-card {
-  height: 60vh;
+  height: 62vh;
   width: 20%;
   min-width:250px;
   display: flex;
@@ -112,6 +112,22 @@
 {
   margin-top:10px;
   height:100px;
+}
+.service-button
+{
+margin-bottom:10px;
+border:none;
+width:150px;
+height:35px;
+font-size:18px;
+font-weight:400;
+color:#db9703;
+cursor:pointer;
+transition:all 0.3s;
+}
+.service-button:hover{
+  color:black;
+  box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.269);
 }
 .projects {
   width: 100%;
@@ -199,5 +215,16 @@
   .main-service-card
   {
     margin:20px 0px;
+    height:68vh;
   }
+  .service-button
+{
+margin-bottom:10px;
+border:none;
+width:150px;
+height:35px;
+font-size:18px;
+font-weight:400;
+color:#db9703;
+}
 }
