@@ -138,19 +138,18 @@ span {
   color: #f7ab06e5;
 }
 /* scrolling cards*/
-.mb-3
-{
-  text-align:center;
+.mb-3 {
+  text-align: center;
 }
 .scroll-container {
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
 .scrolling-wrapper {
   display: flex;
   overflow-x: auto;
-  gap:3rem;
+  gap: 3rem;
   scroll-behavior: smooth;
   padding: 10px;
   -ms-overflow-style: none;
@@ -160,10 +159,12 @@ span {
 .card-custom {
   flex: 0 0 auto;
   width: 300px;
-  height:60vh;
+  height:67vh;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .scrolling-wrapper::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
@@ -172,28 +173,57 @@ span {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.project-link a
+{
+  position:absolute;
+  right:8px;
+  bottom:0px;
+  text-decoration:none;
+  color:#f7ab06e5;
+}
+.project-link a:hover{
+  color: #f7ab06;
+  text-decoration:none;
+}
+.project-body {
+  display: flex;
+  flex-direction: column;
+  gap:18px;
+  height: 100%;
+  text-align: center;
+}
+
+.project-image img {
+  width:300px;
+  border-radius:3px;
+}
 
 .scroll-button {
   position: absolute;
   transform: translateY(-50%);
   z-index: 10;
-  background:#f7ab06e5;
+  background: #f7ab06e5;
   border: none;
   padding: 10px 12px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border-radius:7px;
+  border-radius: 7px;
 }
-.scroll-left
-{
-  position:absolute;
-  top:50%;
-  left:-100px;
+.scroll-left {
+  position: absolute;
+  top: 50%;
+  left: -100px;
 }
 .scroll-right {
-  position:absolute;
-  top:50%;
-  right:-100px;
+  position: absolute;
+  top: 50%;
+  right: -100px;
 }
 .projects {
   width: 100%;
@@ -245,9 +275,8 @@ span {
     text-align: center;
     margin: 0px 50px;
   }
-  .scroll-button
-  {
-    display:none;
+  .scroll-button {
+    display: none;
   }
 }
 /*tablet*/
@@ -277,17 +306,16 @@ span {
     text-align: center;
     margin: 0px 90px;
   }
-  .scroll-left
-{
-  position:absolute;
-  top:50%;
-  left:-80px;
-}
-.scroll-right {
-  position:absolute;
-  top:50%;
-  right:-80px;
-}
+  .scroll-left {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+  }
+  .scroll-right {
+    position: absolute;
+    top: 50%;
+    right: -80px;
+  }
 }
 @media (min-width: 801px) and (max-width: 2000px) {
   .about-poster {
