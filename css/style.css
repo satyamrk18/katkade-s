@@ -2,7 +2,10 @@ body {
     margin: 0;
     padding: 0;
   }
-
+  *::selection {
+    background: rgb(247, 207, 6);
+    color: black;
+  }
   .header {
     width: 100%;
     position: fixed;
