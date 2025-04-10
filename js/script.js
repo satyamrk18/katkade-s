@@ -95,7 +95,7 @@ AOS.init();
 //scrolling cards horizontally
 function scrollCards(direction) {
   const container = document.getElementById("cardContainer");
-  const scrollAmount = 300;
+  const scrollAmount = 380;
   if (direction === "left") {
     container.scrollLeft -= scrollAmount;
   } else {
