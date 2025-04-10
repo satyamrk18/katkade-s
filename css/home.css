@@ -144,6 +144,7 @@ span {
 }
 .scroll-container {
   position: relative;
+  width:100%;
 }
 
 .scrolling-wrapper {
@@ -174,7 +175,6 @@ span {
 
 .scroll-button {
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   background:#f7ab06e5;
@@ -182,15 +182,18 @@ span {
   padding: 10px 12px;
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+  border-radius:7px;
 }
-
-.scroll-left {
-  left: -10px;
+.scroll-left
+{
+  position:absolute;
+  top:50%;
+  left:-100px;
 }
-
 .scroll-right {
-  right: -10px;
+  position:absolute;
+  top:50%;
+  right:-100px;
 }
 .projects {
   width: 100%;
@@ -242,6 +245,10 @@ span {
     text-align: center;
     margin: 0px 50px;
   }
+  .scroll-button
+  {
+    display:none;
+  }
 }
 /*tablet*/
 @media (min-width: 601px) and (max-width: 800px) {
@@ -270,6 +277,17 @@ span {
     text-align: center;
     margin: 0px 90px;
   }
+  .scroll-left
+{
+  position:absolute;
+  top:50%;
+  left:-80px;
+}
+.scroll-right {
+  position:absolute;
+  top:50%;
+  right:-80px;
+}
 }
 @media (min-width: 801px) and (max-width: 2000px) {
   .about-poster {
