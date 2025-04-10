@@ -92,3 +92,13 @@ const observer = new IntersectionObserver(
 observer.observe(document.getElementById("counter-section"));
 //to initialize the the animation
 AOS.init();
+//scrolling cards horizontally
+function scrollCards(direction) {
+  const container = document.getElementById("cardContainer");
+  const scrollAmount = 300;
+  if (direction === "left") {
+    container.scrollLeft -= scrollAmount;
+  } else {
+    container.scrollLeft += scrollAmount;
+  }
+}
