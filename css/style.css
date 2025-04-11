@@ -146,6 +146,20 @@ strong:hover {
     height: 25px;
   }
 }
+/*small devices*/
+@media(max-width:350px)
+{
+  .logo
+  {
+    margin-left:80px;
+  }
+  .logo-1 {
+    height:40px;
+  }
+  .logo-2 {
+    height: 20px;
+  }
+}
 /*tablet*/
 @media (min-width: 601px) and (max-width: 800px) {
   .navbar ul {
