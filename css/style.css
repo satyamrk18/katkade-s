@@ -147,17 +147,17 @@ strong:hover {
   }
 }
 /*small devices*/
-@media(max-width:350px)
+@media(max-width:390px)
 {
   .logo
   {
     margin-left:80px;
   }
   .logo-1 {
-    height:40px;
+    height:30px;
   }
   .logo-2 {
-    height: 20px;
+    height:20px;
   }
 }
 /*tablet*/

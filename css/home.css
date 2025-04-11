@@ -20,8 +20,16 @@
   color: black;
   position: relative;
   z-index: 2;
+  /* background-image:linear-gradient(green, blue); */
+  
 }
-
+.underline
+{
+  height:5px;
+  width:150px;
+  margin:0 auto;
+  background-color:red;
+}
 .about-img img {
   height: 275px;
 }
@@ -278,6 +286,14 @@ span {
   }
   .scroll-button {
     display: none;
+  }
+}
+@media (max-wdith:350px)
+{
+  .info-card 
+  {
+    flex-wrap:wrap;
+    font-size:10px;
   }
 }
 /*tablet*/
