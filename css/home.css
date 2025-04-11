@@ -20,15 +20,40 @@
   color: black;
   position: relative;
   z-index: 2;
+  margin-bottom:5px;
   /* background-image:linear-gradient(green, blue); */
   
 }
 .underline
 {
   height:5px;
+  width:180px;
+  display:flex;
+  flex-direction:row;
+  margin:0 auto;
+  justify-content:space-between;
+  flex-wrap:nowrap;
+}
+.underline-1
+{
+  height:5px;
+  width:10px;
+  background-color:black;
+  margin:0 auto;
+}
+.underline-2
+{
+  height:5px;
   width:150px;
   margin:0 auto;
   background-color:red;
+}
+.underline-3
+{
+  height:5px;
+  width:10px;
+  background-color:black;
+  margin:0 auto;
 }
 .about-img img {
   height: 275px;
