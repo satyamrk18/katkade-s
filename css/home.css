@@ -325,6 +325,14 @@ span {
   .scroll-button {
     display: none;
   }
+  .quality-heading h1
+  {
+    font-size:22px;
+  }
+  .quality-heading
+  {
+    font-size:18px;
+  }
 }
 @media (max-wdith: 350px) {
   .info-card {
