@@ -262,6 +262,12 @@ span {
   background-image: url("./../images/constrction-engineerie-communication.jpg");
   background-position: center;
   background-size: cover;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}.morden-construction-poster span{
+ color:#db9703;
 }
 .footer {
   width: 100%;
