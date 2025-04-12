@@ -255,19 +255,20 @@ span {
   top: 50%;
   right: -100px;
 }
-.morden-construction-poster
-{
+.morden-construction-poster {
   width: 100%;
   height: 150px;
   background-image: url("./../images/constrction-engineerie-communication.jpg");
   background-position: center;
   background-size: cover;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}.morden-construction-poster span{
- color:#db9703;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.morden-construction-poster span {
+  color: #efc809;
+  
 }
 .footer {
   width: 100%;
