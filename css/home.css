@@ -286,8 +286,24 @@ span {
 }
 .article-body {
   border: 2px solid black;
-  height: 50vh;
+  height:60vh;
   min-width: 300px;
+  max-width:300px;
+  display:flex;
+  align-items:center;
+ justify-content:space-evenly;
+ flex-direction:column;
+ flex-wrap:wrap;
+ text-align:center;
+}
+.article-img img
+{
+  height:100px;
+  width:100%;
+}
+.article-date
+{
+  
 }
 .footer {
   width: 100%;
