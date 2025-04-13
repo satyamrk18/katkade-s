@@ -269,6 +269,20 @@ span {
 .morden-construction-poster span {
   color: #efc809;
   
+}.articles{
+  width:100%;
+  height:50vh;
+  background-color:green;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  
+}
+.article-body
+{
+  border:2px solid black;
+  height:100%;
+  width:20%;
 }
 .footer {
   width: 100%;
