@@ -291,10 +291,11 @@ span {
   max-width:300px;
   display:flex;
   align-items:center;
- justify-content:space-evenly;
+ justify-content:space-between;
  flex-direction:column;
  flex-wrap:wrap;
  text-align:center;
+ gap:7px;
 }
 .article-img img
 {
@@ -303,7 +304,16 @@ span {
 }
 .article-date
 {
-  
+  display:flex;
+  flex-direction:row;
+}
+.article-date img
+{
+height:25px;
+margin-right:10px;
+}
+.article-body button{
+  margin-top:3px;
 }
 .footer {
   width: 100%;
