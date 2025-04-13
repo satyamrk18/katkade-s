@@ -284,7 +284,6 @@ span {
   margin-top: 50px;
 }
 .article-body {
-  border: 2px solid black;
   height: inherit;
   min-width: 300px;
   max-width: 300px;
@@ -299,6 +298,7 @@ span {
 .article-img img {
   height: 100px;
   width: 100%;
+  box-shadow: 0pc 0px 2px 2px rgba(0, 0, 0, 0.171);
 }
 .article-date {
   display: flex;
