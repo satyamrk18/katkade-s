@@ -371,10 +371,42 @@ span {
 }
 .get-in-touch {
   width: 100%;
-  height: 100px;
-  background-color: red;
+  height:100vh;
+  background-image:url("./../images/building.jpg");
+  background-position: center;
+  background-size:cover;
 }
-
+.get-in-touch h1
+{
+  text-align:center;
+  color:white;
+}
+.contact-heading
+{
+  position:absolute;
+  top:0px;
+}
+.get-in-touch
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position: relative;
+}
+.get-in-touch-form
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  padding:100px;
+}
+.footer
+{
+  background-color:green;
+  height:100px;
+  width:100%;
+}
 /*mobile*/
 @media (max-width: 600px) {
   .containeree {
