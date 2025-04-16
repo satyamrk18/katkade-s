@@ -336,10 +336,12 @@ span {
   text-align: center;
   margin: 25px 150px;
 }
+
+/* image loop code */
 .image-loop-container {
   height:150px;
   width: 100%;
-  background-color: #db9703;
+  background-color: rgb(247, 207, 6);
   margin-top: 10px;
 }
 .image-loop-container {
