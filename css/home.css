@@ -341,7 +341,6 @@ span {
 .image-loop-container {
   height:150px;
   width: 100%;
-  background-color: rgb(247, 207, 6);
   margin-top: 10px;
 }
 .image-loop-container {
@@ -359,6 +358,7 @@ span {
   height: auto;
   margin-right: 20px;
   display: inline-block;
+  margin:0 55px;
 }
 
 @keyframes scrollLoop {
@@ -436,6 +436,10 @@ span {
   .artical-info {
     margin: 25px 10px;
   }
+  .image-strip img
+  {
+    margin:0 40px;
+  }
 }
 @media (max-wdith: 350px) {
   .info-card {
@@ -444,6 +448,10 @@ span {
   }
   .article-body {
     min-width: 250px;
+  }
+  .image-strip img
+  {
+    margin:0 30px;
   }
 }
 /*tablet*/
