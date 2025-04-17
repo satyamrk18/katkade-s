@@ -415,6 +415,16 @@ textarea {
   height: 100px;
   width: 100%;
 }
+.send-btn
+{
+  height:35px;
+  width:100px;
+  background-color: #db9703;
+  color:white;
+  font-size: 18px;
+  font-weight:600;
+  border:none;
+}
 /*mobile*/
 @media (max-width: 600px) {
   .containeree {

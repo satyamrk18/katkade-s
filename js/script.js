@@ -114,7 +114,7 @@ function sendEmail() {
     .send("service_hne8q1g", "template_ayp2wrh", param)
     .then(function (response) {
       alert("Your email has been sent successfully");
-      setTimeout(() => window.location.reload(), 3000);
+      setTimeout(() => window.location.reload(), 1000);
     })
     .catch(function(error) {
       alert("Failed to send email. Please try again.");
