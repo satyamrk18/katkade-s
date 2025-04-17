@@ -511,6 +511,10 @@ textarea {
   {
     display:none;
   }
+  .send-btn
+  {
+    margin-top:10px;
+  }
 }
 @media (max-wdith: 350px) {
   .info-card {
