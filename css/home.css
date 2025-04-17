@@ -410,20 +410,20 @@ textarea {
   width: 70%;
   border: none;
 }
+.send-btn {
+  height: 35px;
+  width: 100px;
+  background-color: #f7ab06e5;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin-top: 60px;
+}
 .footer {
   background-color: green;
   height: 100px;
   width: 100%;
-}
-.send-btn
-{
-  height:35px;
-  width:100px;
-  background-color: #db9703;
-  color:white;
-  font-size: 18px;
-  font-weight:600;
-  border:none;
 }
 /*mobile*/
 @media (max-width: 600px) {
@@ -492,22 +492,20 @@ textarea {
   .image-strip img {
     margin: 0 40px;
   }
-  .get-in-touch
-  {
-    height:80vh;
+  .get-in-touch {
+    height: 80vh;
   }
   textarea {
     height: 250px;
   }
-  .get-in-touch-form
-  {
-    display:flex;
-    flex-direction:row;
+  .get-in-touch-form {
+    display: flex;
+    flex-direction: row;
   }
   .get-in-touch-form input {
-    margin:10px;
+    margin: 10px;
     height: 35px;
-    width:150px;
+    width: 150px;
   }
 }
 @media (max-wdith: 350px) {
@@ -523,12 +521,11 @@ textarea {
   }
   .get-in-touch-form input {
     height: 10px;
-    width: 20px; 
+    width: 20px;
   }
-  .get-in-touch-form
-  {
-    display:flex;
-    flex-direction:column;
+  .get-in-touch-form {
+    display: flex;
+    flex-direction: column;
   }
 }
 /*tablet*/
@@ -576,11 +573,10 @@ textarea {
   .get-in-touch-form input {
     margin: 35px;
     height: 35px;
-    width:150px;
+    width: 150px;
   }
-  .get-in-touch-form
-  {
-    flex-direction:column;
+  .get-in-touch-form {
+    flex-direction: column;
   }
 }
 @media (min-width: 801px) and (max-width: 900px) {
