@@ -102,3 +102,22 @@ function scrollCards(direction) {
     container.scrollLeft += scrollAmount;
   }
 }
+//send email functionality
+function sendEmail() {
+  let param = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    mobileNumber: document.getElementById("phone").value,
+    description: document.getElementById("description").value,
+  };
+  emailjs
+    .send("service_hne8q1g", "template_ayp2wrh", param)
+    .then(function (response) {
+      alert("Your email has been sent successfully");
+      setTimeout(() => window.location.reload(), 3000);
+    });
+    .catch(function(error) {
+      alert("Failed to send email. Please try again.");
+      console.error("Error:", error);
+    });
+}

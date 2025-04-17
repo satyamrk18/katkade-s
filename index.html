@@ -33,7 +33,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <style></style>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "5XZW1poAEJpym8EP4",
+      });
+   })();
+</script>
   </head>
   <body>
     <div class="header">
@@ -718,6 +727,7 @@
       </div>
       <textarea id="description" name="message" rows="10" cols="100" placeholder="Decsription..." autocomplete="on" autocorrect="on" 
       spellcheck="true"></textarea>
+      <button type="button" onclick="sendEmail()">Send</button>
       </div>
     <!--footer-->
     <div class="footer"></div>
