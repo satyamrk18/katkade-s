@@ -507,6 +507,10 @@ textarea {
     height: 35px;
     width: 150px;
   }
+  .contact-heading
+  {
+    display:none;
+  }
 }
 @media (max-wdith: 350px) {
   .info-card {
