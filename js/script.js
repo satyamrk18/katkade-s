@@ -115,7 +115,7 @@ function sendEmail() {
     .then(function (response) {
       alert("Your email has been sent successfully");
       setTimeout(() => window.location.reload(), 3000);
-    });
+    })
     .catch(function(error) {
       alert("Failed to send email. Please try again.");
       console.error("Error:", error);
