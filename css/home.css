@@ -419,6 +419,7 @@ textarea {
   font-weight: 600;
   border: none;
   margin-top: 60px;
+  border-radius:5px;
 }
 .footer {
   background-color: green;
