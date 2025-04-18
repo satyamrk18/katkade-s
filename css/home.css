@@ -422,9 +422,15 @@ textarea {
   border-radius:5px;
 }
 .footer {
-  background-color: green;
-  height: 100px;
+  background-color:green;
+  height:30vh;
   width: 100%;
+}
+.credites
+{
+  height:30px;
+  width:100%;
+  background-color:black;
 }
 /*mobile*/
 @media (max-width: 600px) {
