@@ -422,15 +422,19 @@ textarea {
   border-radius:5px;
 }
 .footer {
-  background-color:green;
+  background: rgb(247, 207, 6);
   height:30vh;
   width: 100%;
 }
-.credites
+.copyright
 {
   height:30px;
   width:100%;
-  background-color:black;
+  background-color:#db9703;
+  color:white;
+  text-align:center;
+  font-size:18px;
+  font-weight:600;
 }
 /*mobile*/
 @media (max-width: 600px) {
