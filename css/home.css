@@ -441,6 +441,39 @@ textarea {
 .footer-logo img{
   height:50px;
 }
+.footer li
+{
+  list-style-type: none;
+  font-size:18px;
+  margin:10px;
+  font-weight:600;
+}
+.FeedBack
+{
+  display:flex;
+  flex-direction:column;
+  min-width:350px;
+  align-items:center;
+  justify-content: center;
+}
+.FeedBack button
+{
+  text-align: center;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+  font-weight: 600;
+  color: white;
+  font-size: 22px;
+  background-color: #f7ab06e5;
+}
+.address
+{
+  font-size:18px;
+  font-weight:400;
+}
 .copyright
 {
   height:30px;
