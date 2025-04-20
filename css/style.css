@@ -68,7 +68,7 @@ strong:hover {
 }
 .navbar {
   display: flex;
-  align-items: center;
+  align-items:center;
 }
 .navbar ul {
   display: flex;
@@ -132,14 +132,15 @@ strong:hover {
   }
   .navbar {
     display: flex;
-    justify-content: center;
-    height: 1024px;
+    height:100vh;
+    align-content:flex-start;
   }
   .navbar ul {
     display: flex;
     flex-direction: column;
-    gap: 20vh;
+    gap:15px;
     margin-top: 25px;
+    color:black;
   }
   .logo
   {
