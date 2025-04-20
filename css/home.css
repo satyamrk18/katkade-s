@@ -526,9 +526,10 @@ textarea {
   }
   .about {
     height: auto;
+    
   }
   .phn-about-img {
-    height: 200px;
+    height:180px;
     margin: 25px;
   }
   .incremetnal-info p {
@@ -586,7 +587,12 @@ textarea {
     margin-top: 10px;
   }
 }
-@media (max-wdith: 350px) {
+/* small screen */
+@media (max-width:352px) {
+  .about-poster
+  {
+    width:100%;
+  }
   .info-card {
     flex-wrap: wrap;
     font-size: 10px;
@@ -598,12 +604,19 @@ textarea {
     margin: 0 30px;
   }
   .get-in-touch-form input {
-    height: 10px;
-    width: 20px;
+    height:25px;
+    width:10px;
   }
   .get-in-touch-form {
     display: flex;
     flex-direction: column;
+  }
+  .main-service-card {
+    min-width:300px;
+  }
+  .artical-info tr
+  {
+    font-size:5px;
   }
 }
 /*tablet*/
