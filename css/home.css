@@ -474,6 +474,16 @@ textarea {
   font-size:18px;
   font-weight:400;
 }
+.social-media
+{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+.social-media img{
+height:50px;
+}
 .copyright
 {
   height:30px;
