@@ -68,7 +68,7 @@ strong:hover {
 }
 .navbar {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 .navbar ul {
   display: flex;
@@ -98,9 +98,8 @@ strong:hover {
   height: 100vh;
   object-fit: cover;
 }
-.carousel-inner img
-{
-  height:80vh;
+.carousel-inner img {
+  height: 80vh;
   object-fit: cover;
 }
 
@@ -132,44 +131,50 @@ strong:hover {
   }
   .navbar {
     display: flex;
-    height:100vh;
-    align-content:flex-start;
+    height: 100vh;
+    align-content: flex-start;
   }
   .navbar ul {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     margin-top: 25px;
-    color:black;
+    color: black;
   }
-  .logo
-  {
-    margin-left:100px;
+  .logo {
+    margin-left: 100px;
   }
   .logo-1 {
-    height:45px;
+    height: 45px;
   }
   .logo-2 {
     height: 25px;
   }
-  .carousel-inner img
-{
-  height:60vh;
-  object-fit: cover;
-}
+  .carousel-inner img {
+    height: 60vh;
+    object-fit: cover;
+  }
+  .phn-get-in-touch button {
+    border: none;
+    width: 115px;
+    margin-top:60px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:white;
+    font-weight:600;
+    color:#f7ab06e5;
+  }
 }
 /*small devices*/
-@media(max-width:390px)
-{
-  .logo
-  {
-    margin-left:80px;
+@media (max-width: 390px) {
+  .logo {
+    margin-left: 80px;
   }
   .logo-1 {
-    height:30px;
+    height: 30px;
   }
   .logo-2 {
-    height:20px;
+    height: 20px;
   }
 }
 /*tablet*/
@@ -182,14 +187,20 @@ strong:hover {
     display: none;
   }
   .logo-1 {
-    height:55px;
+    height: 55px;
   }
   .logo-2 {
     height: 35px;
   }
+  .phn-get-in-touch {
+    display: none;
+  }
 }
 @media (min-width: 801px) and (max-width: 2000px) {
   #hamburger-menu {
+    display: none;
+  }
+  .phn-get-in-touch {
     display: none;
   }
 }
