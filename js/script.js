@@ -2,10 +2,10 @@ let hamburgerNav = document.getElementById("hamburgerNav");
 let hamNav = document.getElementById("hamburger-menu");
 function hamMenu() {
   //hamburger menu image cance to cancel image code
-  if (hamNav.src.includes("menus.png")) {
+  if (hamNav.src.includes("menu-bar.png")) {
     hamNav.src = "./images/cancel.png";
   } else {
-    hamNav.src = "./images/menus.png";
+    hamNav.src = "./images/menu-bar.png";
   }
   //hamburger menu display on small phone screen code
   if (
@@ -116,7 +116,7 @@ function sendEmail() {
       alert("Your email has been sent successfully");
       setTimeout(() => window.location.reload(), 1000);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       alert("Failed to send email. Please try again.");
       console.error("Error:", error);
     });
