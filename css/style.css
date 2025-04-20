@@ -98,6 +98,12 @@ strong:hover {
   height: 100vh;
   object-fit: cover;
 }
+.carousel-inner img
+{
+  height:80vh;
+  object-fit: cover;
+}
+
 /*mobile*/
 @media (max-width: 600px) {
   #hamburger-menu {
@@ -145,6 +151,11 @@ strong:hover {
   .logo-2 {
     height: 25px;
   }
+  .carousel-inner img
+{
+  height:60vh;
+  object-fit: cover;
+}
 }
 /*small devices*/
 @media(max-width:390px)
