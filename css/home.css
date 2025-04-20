@@ -480,9 +480,10 @@ textarea {
   flex-direction:row;
   align-items:center;
   justify-content:center;
+  margin-top:10px;
 }
 .social-media img{
-height:50px;
+height:25px;
 }
 .copyright
 {
@@ -495,6 +496,7 @@ height:50px;
   font-weight:600;
   position:relative;
   bottom:0px;
+  margin-top:10px;
 }
 /*mobile*/
 @media (max-width: 600px) {
